@@ -1,0 +1,31 @@
+/* GENERAL */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: $font-stack;
+  font-weight: 400;
+  background-color: #F9F8F8;
+  background-image: url("../images/body-bg.png");
+  background-size: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

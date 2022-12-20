@@ -1,0 +1,165 @@
+/*********************** HEADER STYLES START ************************/
+.site-header{
+    &__start{
+        padding-top: 11px;
+        padding-bottom: 13px;
+    }
+    
+    &__end{
+        position: relative;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #fff;
+        border: 1px solid #F3F3F3;
+    }
+}
+
+.start-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1117px;
+    margin-left: auto;
+    
+    &__address{
+        font-weight: 500;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 18px;
+        color: #333;
+        
+        &::before{
+            display: inline-block;
+            margin-right: 9px;
+            content: url("../../images/icons/home-icon.svg");
+        }
+    }
+    
+    &__list{
+        display: flex;
+        @include list-unstyled;
+    }
+    
+    &__item{
+        display: flex;
+        align-items: center;
+    }
+    
+    &__item:not(:last-child){
+        margin-right: 22px;
+    }
+    
+    &__item::before{
+        display: inline-block;
+        margin-right: 9px;
+        content: "";
+    }
+    
+    &__item:first-child::before{
+        content: url("../../images/icons/phone-icon.svg");
+    }
+    
+    &__item:nth-child(2)::before{
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color:#FFBD54;
+    }
+    
+    
+    &__item:nth-child(3)::before{
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color:#FFBD54;
+    }
+    
+    &__link{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        text-decoration: none;
+        color: #333;
+    }
+    
+    &__time-box{
+        display: flex;
+        align-items: center;
+    }
+    
+    &__time-box::before{
+        display: inline-block;
+        margin-right: 7px;
+        content: url("../../images/icons/calendar-icon.svg");
+    }
+    
+    &__time{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #333;
+        
+        &:first-child{
+            margin-right: 17px;
+        }
+    }
+}
+
+.end-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1017px;
+    margin-left: auto;
+    &__logo{
+        position: absolute;
+        left: calc(50% - 700px);
+    }
+    
+    &__request-link{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        text-decoration: none;
+        color: #333;
+
+        &::before{
+            display: inline-block;
+            margin-right: 7px;
+            content: url("../../images/icons/paw-icon.svg");
+        }
+    }
+}
+
+.sitenav{
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        width: 725px;
+        @include list-unstyled;
+    }
+    
+    &__item{
+        display: flex;
+        align-items: center;
+    }
+    
+    &__item--active::before{
+        display: inline-block;
+        margin-right: 12px;
+        content: url("../../images/icons/active-icon.svg");
+    }
+    
+    &__link{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        text-decoration: none;
+        color: #333;
+    }
+    
+}
