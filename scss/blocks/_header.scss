@@ -144,11 +144,15 @@
     }
     
     &__item{
+        position: relative;
         display: flex;
         align-items: center;
     }
     
     &__item--active::before{
+        position: absolute;
+        top: 0px;
+        left: -40px;
         display: inline-block;
         margin-right: 12px;
         content: url("../../images/icons/active-icon.svg");

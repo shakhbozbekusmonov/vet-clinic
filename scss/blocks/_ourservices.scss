@@ -1,0 +1,99 @@
+/****************** OUR SERVICES *****************/
+.our-services{
+    padding-top: 118px;
+    padding-bottom: 134px;
+    background-image: url("../../images/our-services-bg.png");
+    background-position: calc(50% + 542px) calc(50% - 795px);
+    background-repeat: no-repeat;
+    
+    &__text-box{
+        width: 100%;
+        max-width: 447px;
+        margin-bottom: 140px;
+        margin-left: 112px;
+    }
+    
+    &__title{
+        margin-top: 0;
+        margin-bottom: 21px;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 64px;
+        color: #333;        
+    }
+    
+    &__desc{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 16px;
+        line-height: 20px;
+        color: #949494;        
+    }
+    
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 0;
+        list-style: none;
+    }
+    
+    &__item{
+        width: 100%;
+        max-width: 305px;
+        margin-bottom: 34px;
+        padding: 58px 22px 45px 53px;
+        background-color: #fff;
+        border-radius: 5px 5px 0px 0px;
+
+        &:hover{
+            filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.2));
+        }
+
+        &:nth-child(even){
+            .our-services__item-btn{
+                background-color: #78C0DE;
+
+                &:hover{
+                    background-color: #000;
+                }
+            }
+        }
+    }
+    
+    &__item-img{
+        margin-bottom: 21px;
+    }
+    
+    &__item-title{
+        margin-top: 0;
+        margin-bottom: 14px;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 34px;
+        color: #333;
+    }
+    
+    &__item-desc{
+        margin-top: 0;
+        margin-bottom: 26px;
+        font-size: 16px;
+        line-height: 20px;
+        color: #949494;
+    }
+    
+    &__item-btn{
+        display: inline-block;
+        padding: 15px 30px;
+        border-radius: 3px;
+        font-size: 16px;
+        line-height: 21px;
+        text-decoration: none;
+        background-color: #FFBD54;
+        color: #fff;
+
+        &:hover{
+            background-color: #000;
+        }
+    }
+} 
